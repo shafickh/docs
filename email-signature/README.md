@@ -49,14 +49,31 @@ signature displays it at 320 px.
 
 These do not read the Signatures folder, so the signature goes in by copy and paste:
 
+These store signatures in the cloud rather than in a folder on the machine, so the file-based
+method above does not apply to them ([Microsoft
+Q&A](https://learn.microsoft.com/answers/a/12180436)). The signature goes in by copy and paste:
+
 1. Open `Shafick Hassan.htm` in Edge or Chrome (double-click it).
-2. Click into the page, press `Ctrl` + `A` then `Ctrl` + `C` (`Cmd` on a Mac).
+2. Click into the **rendered page** and press `Ctrl` + `A` then `Ctrl` + `C` (`Cmd` on a Mac).
+   Copy what you can see, not the HTML source — pasting source is the usual reason a paste
+   silently does nothing ([Microsoft
+   Q&A](https://learn.microsoft.com/answers/a/12646271)).
 3. In Outlook go to **Settings > Mail > Compose and reply** (Mac: **Outlook > Settings >
    Signatures**).
 4. Create a signature named "Shafick Hassan", click into the editing box and press `Ctrl` + `V`.
 5. Choose it for new messages and for replies, then **Save**.
 
 The logo travels with the paste, so no separate upload is needed.
+
+### Which method applies to you
+
+| | Classic Outlook for Windows | New Outlook / OWA / Mac |
+|---|---|---|
+| Where signatures live | `%APPDATA%\Microsoft\Signatures` on the PC | In the cloud, on your Microsoft account |
+| Install method | Copy the files in | Copy and paste the rendered signature |
+| Files used | `.htm` + `.txt` + image folder | None — Outlook stores its own copy |
+| Syncs to your other devices | No | Yes |
+| Outlook must be closed first | Yes | No |
 
 ## Step 3 — check it
 
